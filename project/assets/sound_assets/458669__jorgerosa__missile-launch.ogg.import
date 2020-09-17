@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/458669__jorgerosa__missile-launch.ogg-3ec69eec8715d3b1aa43cb045086f02c.oggstr"
+
+[deps]
+
+source_file="res://assets/sound_assets/458669__jorgerosa__missile-launch.ogg"
+dest_files=[ "res://.import/458669__jorgerosa__missile-launch.ogg-3ec69eec8715d3b1aa43cb045086f02c.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

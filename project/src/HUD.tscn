@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/kenny_gameicons_assets/arrowRight.png" type="Texture" id=3]
+
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="GoalLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -63.5
+margin_right = 63.5
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Hit the white object
+
+Press Space Bar to launch"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AngleSlider" type="VSlider" parent="."]
+anchor_right = 0.016
+anchor_bottom = 0.027
+margin_left = 116.0
+margin_top = 20.0
+margin_right = 120.616
+margin_bottom = 122.8
+max_value = 10.0
+step = 0.25
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AngleLabel" type="Label" parent="."]
+margin_left = 85.0283
+margin_top = 149.84
+margin_right = 166.028
+margin_bottom = 163.84
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Adjust Angle"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StrengthSlider" type="VSlider" parent="."]
+margin_left = 236.0
+margin_top = 19.0
+margin_right = 252.0
+margin_bottom = 136.0
+min_value = 250.0
+max_value = 700.0
+value = 250.0
+ticks_on_borders = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StrengthLabel" type="Label" parent="."]
+margin_left = 197.408
+margin_top = 148.651
+margin_right = 295.408
+margin_bottom = 162.651
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Adjust Strength"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AngleArrow" type="Sprite" parent="."]
+position = Vector2( 192.217, 446.504 )
+scale = Vector2( 1.8009, 1.0267 )
+texture = ExtResource( 3 )
+[connection signal="changed" from="AngleSlider" to="AngleSlider" method="_on_AngleSlider_changed"]
+[connection signal="value_changed" from="AngleSlider" to="." method="_on_AngleSlider_value_changed"]
