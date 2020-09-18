@@ -8,6 +8,8 @@ onready var WinLabelNode = $Player/GameOver/WinLabel
 onready var LoseLabelNode = $Player/GameOver/LoseLabel
 onready var ReloadGameLabel = $Player/GameOver/ReloadGameLabel
 onready var title_screen = load("res://src/TitleScreen.tscn").instance()
+onready var reload_scene = load("res://src/Level.tscn").instance()
+
 func _ready():
 	WinLabelNode.hide()
 	LoseLabelNode.hide()
@@ -15,9 +17,12 @@ func _ready():
 
 
 func _process(delta):
-	if Input.is_action_just_pressed("reload_scene"):
+	if Input.is_action_just_pressed("return_to_menu"):
 		queue_free()
 		get_tree().get_root().add_child(title_screen)
+	if Input.is_action_just_pressed("reload_scene"):
+		queue_free()
+		get_tree().get_root().add_child(reload_scene)
 	_checkForGameOver()
 
 

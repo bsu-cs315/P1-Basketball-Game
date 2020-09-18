@@ -12,7 +12,9 @@ margin_top = 41.4158
 margin_right = 73.5
 margin_bottom = 55.4158
 custom_colors/font_color = Color( 0.00784314, 0, 1, 1 )
-text = "Press R to reload game"
+text = "Press R to reload game
+
+Press Esc to return to menu"
 __meta__ = {
 "_edit_use_anchors_": false
 }
