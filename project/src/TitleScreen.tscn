@@ -64,21 +64,6 @@ tile_data = PoolIntArray( -3, 0, 0, -2, 0, 0, -65536, 0, 0, -65534, 0, 0, -65532
 
 [node name="HUD" type="CanvasLayer" parent="."]
 
-[node name="Label" type="Label" parent="HUD"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -31.3273
-margin_top = 34.4268
-margin_right = 37.6727
-margin_bottom = 49.4268
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "WELCOME!"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Button" type="Button" parent="HUD"]
 anchor_left = 0.5
 anchor_top = 0.5
