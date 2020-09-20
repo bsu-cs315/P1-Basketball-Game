@@ -1,14 +1,15 @@
-# Title screen with a start button. loads gameplay
+# Title screen with a start button. Loads gameplay
 # scene after button is pressed
 extends Node2D
 
-var gameplay_scene = preload("res://src/Level.tscn").instance()
-onready var ButtonNode = $HUD/Button
-onready var LogoNode = $HUD/Logo
-onready var TitleBackground = $Background
+var _gameplay_scene = preload("res://src/Level.tscn").instance()
+
+onready var _button = $HUD/Button
+onready var _logo = $HUD/Logo
+onready var _title_background = $Background
 
 func _on_Button_pressed():
-	ButtonNode.hide()
-	LogoNode.hide()
-	TitleBackground.free()
-	get_tree().get_root().add_child(gameplay_scene)
+	_button.hide()
+	_logo.hide()
+	_title_background.free()
+	get_tree().get_root().add_child(_gameplay_scene)
