@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/elementStone020.png-5c5878b1c649df92284270b791655a0b.stex"
+path="res://.import/element_stone020.png-85b45bd11a2fba56f70c03a38d075fcc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenny_physicspack_assets/elementStone020.png"
-dest_files=[ "res://.import/elementStone020.png-5c5878b1c649df92284270b791655a0b.stex" ]
+source_file="res://assets/kenny_physicspack_assets/element_stone020.png"
+dest_files=[ "res://.import/element_stone020.png-85b45bd11a2fba56f70c03a38d075fcc.stex" ]
 
 [params]
 

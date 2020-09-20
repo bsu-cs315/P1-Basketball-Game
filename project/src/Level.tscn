@@ -1,13 +1,14 @@
 [gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/kenny_physicspack_assets/elementStone050.png" type="Texture" id=2]
+[ext_resource path="res://assets/kenny_physicspack_assets/element_stone050.png" type="Texture" id=2]
 [ext_resource path="res://src/Target.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Launcher.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/HUD.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/kenny_physicspack_assets/colored_grass.png" type="Texture" id=6]
 [ext_resource path="res://src/GameOver.tscn" type="PackedScene" id=7]
 [ext_resource path="res://src/Level.gd" type="Script" id=8]
+
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 140, 0, 140, 140, 0, 140 )

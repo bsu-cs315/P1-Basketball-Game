@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/arrowRight.png-021b6d4eeb88f8011724f35e734f9516.stex"
+path="res://.import/element_metal055.png-b02a2444f2cfa37998c501662acc4c96.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenny_gameicons_assets/arrowRight.png"
-dest_files=[ "res://.import/arrowRight.png-021b6d4eeb88f8011724f35e734f9516.stex" ]
+source_file="res://assets/kenny_physicspack_assets/element_metal055.png"
+dest_files=[ "res://.import/element_metal055.png-b02a2444f2cfa37998c501662acc4c96.stex" ]
 
 [params]
 
