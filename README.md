@@ -47,4 +47,5 @@ Images are from "Game Icons". Created by kenny.nl,
 Sound effect is from "Rocket Launch". Created by Jarusca,
 [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/). Source: https://freesound.org/people/Jarusca/sounds/521377/
 
-Logo was created from 
+Logo was created using www.coolgenerator.com. 
+[CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/). Source: https://www.coolgenerator.com/png-text-generator
