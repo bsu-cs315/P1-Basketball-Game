@@ -1,3 +1,5 @@
+# Detect when the player object enters the target, if so
+# plays an animation for a few seconds
 extends StaticBody2D
 var hit_indicator = 0
 

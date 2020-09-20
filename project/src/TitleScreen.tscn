@@ -109,7 +109,7 @@ __meta__ = {
 }
 
 [node name="Logo" type="Sprite" parent="HUD"]
-position = Vector2( 527.101, 257.281 )
+position = Vector2( 527.101, -100 )
 scale = Vector2( 1.4, 1.4 )
 texture = ExtResource( 3 )
 

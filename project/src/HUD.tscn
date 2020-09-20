@@ -2,7 +2,6 @@
 
 [ext_resource path="res://assets/kenny_gameicons_assets/arrowRight.png" type="Texture" id=3]
 
-
 [node name="HUD" type="CanvasLayer"]
 
 [node name="GoalLabel" type="Label" parent="."]
@@ -72,4 +71,3 @@ position = Vector2( 192.217, 446.504 )
 scale = Vector2( 1.8009, 1.0267 )
 texture = ExtResource( 3 )
 [connection signal="changed" from="AngleSlider" to="AngleSlider" method="_on_AngleSlider_changed"]
-[connection signal="value_changed" from="AngleSlider" to="." method="_on_AngleSlider_value_changed"]

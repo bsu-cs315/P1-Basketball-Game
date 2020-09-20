@@ -1,44 +1,41 @@
-extends RigidBody2D
 # Controls motion of Player node and applies animation
 # when launched
-onready var AngleSliderNode = $HUD/AngleSlider
-onready var StrengthSliderNode = $HUD/StrengthSlider
-onready var AngleArrowNode = $HUD/AngleArrow
+extends RigidBody2D
 
-var launchChecker = false
-# Used to see if projectile has been launched or not
+var is_launched := false
 
-var strength
-var vector_one
+onready var angle_slider_node = $HUD/AngleSlider
+onready var strength_slider_node = $HUD/StrengthSlider
+onready var angle_arrow_node = $HUD/AngleArrow
+onready var launch_sound_node = $LaunchSound
+onready var launch_animation_node = $AnimatedSprite
 		
 func _process(delta):
-	vector_one = AngleSliderNode.value
-	strength = StrengthSliderNode.value
-	var direction = Vector2(vector_one,-1).normalized()
-	var velocity = direction * strength
-	AngleArrowNode.rotation_degrees = _calculateAngle(velocity.x,velocity.y)
+	var vec_one = angle_slider_node.value
+	var strgh = strength_slider_node.value
+	var dir = Vector2(vec_one,-1).normalized()
+	var vel = dir * strgh
+	angle_arrow_node.rotation_degrees = _calculateAngle(vel.x,vel.y)
 	if Input.is_action_just_pressed("launch"):
 		emit_signal("sleeping_state_changed")
-		if launchChecker == false:
-			launchChecker = true
-			$LaunchSound.play()
-			apply_impulse(Vector2.ZERO,velocity)
+		if is_launched == false:
+			is_launched = true
+			launch_sound_node.play()
+			apply_impulse(Vector2.ZERO,vel)
 			
-			
+func _on_Player_sleeping_state_changed():
+	if Input.is_action_just_pressed("launch"):
+		launch_animation_node.play("moving")
+		
+		
 func _integrate_forces(state):
 	set_scale(Vector2(-1, 1))
 	
-	
-func _on_Player_sleeping_state_changed():
-	if Input.is_action_just_pressed("launch"):
-		$AnimatedSprite.play("moving")
-		
-		
+
 func _calculateAngle(x,y):
 	if x == 0:
 		x = 0.1
-	var div_val = y/x
-	var calculated_angle = atan(div_val)
-	if calculated_angle > -0.1:
-		calculated_angle = 0.0
-	return rad2deg(calculated_angle)
+	var angle = atan(y/x)
+	if angle > -0.1:
+		angle = 0.0
+	return rad2deg(angle)

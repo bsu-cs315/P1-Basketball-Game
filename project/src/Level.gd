@@ -27,7 +27,7 @@ func _process(delta):
 
 
 func _checkForGameOver():
-	if (PlayerNode.launchChecker and PlayerNode.angular_velocity < -0.2) or (PlayerNode.launchChecker and PlayerNode.angular_velocity > 0.3):
+	if (PlayerNode.is_launched and PlayerNode.angular_velocity < -0.2) or (PlayerNode.is_launched and PlayerNode.angular_velocity > 0.3):
 		if(TargetNode.hit_indicator == 1):
 			_gameWin()
 		if TargetNode.hit_indicator == 0:
